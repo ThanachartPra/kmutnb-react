@@ -18,3 +18,18 @@ export default class Calendar extends Component{
         return <div>{this.getDate()}</div>
     }
 }
+export class Button extends Component {
+    showAlert(msg) {
+        alert(msg)
+    }
+    onClickButtonOK = () => {
+        this.showAlert('Hello')
+    }
+    render() {
+        return (
+            <div style = {{textAlign:'center', marginTop:20}}>
+                <button onClick = {this.onClickButtonOK}>OK</button>
+            </div>
+        )
+    }
+}
