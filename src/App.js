@@ -1,8 +1,10 @@
 import React from "react";
 import {Header, Content, Footer} from './func-components'
 import Calendar from "./class-components";
-import RefsArray from "./refs-array";
+import MessageBox from "./state-func";
 /*
+import Cart from "./state-class";
+import RefsArray from "./refs-array";
 import RefsClass from "./refs-class";
 import RefsFunc from "./refs-func";
 import MsgBox from "./class-props";
@@ -19,7 +21,7 @@ function App() {
     <Header/>
     <p><center><Calendar/></center></p>
     <Content/>
-    <RefsArray/>
+    <MessageBox/>
     <Footer/>
     </>
   )
