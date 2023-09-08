@@ -1,8 +1,8 @@
-import React from "react";
+import React, { createContext } from "react";
 import { userContext } from "./context";
 
 export default function Content(){
-    let user = React.useContext(userContext)
+    let [user, setUser] = React.useContext(userContext)
 
     const contentStyle = {
         backgroundColor:'#ddd',
@@ -10,9 +10,18 @@ export default function Content(){
         padding:10,
         margin:10
     }
+
+    const onClickSignin = (event) =>{
+        event.preventDefault()
+        setUser('Tom Jerry')
+    }
+
     return(
         <div style={contentStyle}>
-            Hello{user}
+            {(user)
+                ?<span>Hello{user}</span>
+                :<span>[<a href="" onClick={onClickSignin}>Signin</a>]</span>
+            }
         </div>
     )
 }
