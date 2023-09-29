@@ -1,9 +1,9 @@
 import React from "react";
-import Router3 from "./cls/router3";
+import FormCheck from "./cls/form-check";
 
 function App() {
   return (
-    <Router3/>
+    <FormCheck/>
   );
 }
 export default App;
