@@ -10,13 +10,11 @@ export default function FormValidation() {
         let maxSize = 300
         if (inputFile.current.files.length > maxNumFiles) {
             alert(`เลือกได้ไม่เกิน ${maxNumFiles} ไฟล์`)
-            event.preventDefault()
             return
         }
         for (let f of inputFile.current.files) {
             if (f.size > maxSize * 1000) {
                 alert(`ขนาดของแต่ละไฟล์ต้องไม่เกิน ${maxSize} KB`)
-                event.preventDefault()
                 return
             }
         }
