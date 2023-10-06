@@ -1,9 +1,9 @@
 import React from "react";
-import FormCheck from "./cls/form-check";
+import FormValidation from "./cls/form-validation";
 
 function App() {
   return (
-    <FormCheck/>
+    <FormValidation/>
   );
 }
 export default App;
