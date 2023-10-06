@@ -62,7 +62,7 @@ export default function FormValidation() {
                     {errors.detail && <div style={err}>ต้องกำหนดรายละเอียดสินค้า</div>}
                 </div>
                 <div className="form-group mb-3">
-                    <label htmlFor="price">วันที่เพิ่มสินค้า *</label>
+                    <label htmlFor="dateAdded">วันที่เพิ่มสินค้า *</label>
                     <input type="date" id="dateAdded" name="dateAdded"
                         className="form-control form-control-sm" />
                 </div>
